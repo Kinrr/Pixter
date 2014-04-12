@@ -1,0 +1,15 @@
+<h1 class="text-center">
+	Information
+</h1>
+<br/>
+<% @posts.each do |post| %>
+<div class="span3 launch-box">
+	<h1>
+	<%= post.title %>
+	</h1>
+		<p>
+		<%= post.description %>
+		</p>
+</div>
+
+<% end %>
