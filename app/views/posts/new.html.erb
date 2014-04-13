@@ -1,7 +1,11 @@
-<div class="launch-box">
-	<%= simple_form_for @post do |f| %>
-		<%= f.input :title %>
-		<%= f.input :description %>	
-		<%= f.submit'Upload', :class=> 'btn btn-primary' %>
+<div class="launch-box span4 offset3 text-center">
+	<h1> Add your Image </h1>	
+	<br/>
+	<%= simple_form_for @post do |f| %>	
+		<%= f.input :title, label: 'Your Image Title please', placeholder: 'Tibbers 1v5' %>
+		<br/>
+		<%= f.input :description, label: 'Why is this awesome?', placeholder: 'Tibbers gets a penta' %>	
+		<br/>
+		<%= f.submit'Upload', :class=> 'btn btn-primary btn-large' %>
 		<% end %>
 </div>
